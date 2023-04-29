@@ -10,3 +10,19 @@ Tertiaire  vert    #99E2D0
     width: 100px;
     height: 100px;
 }
+
+/*general*/
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 ,
+.enseigne {
+    font-family: 'Shrikhand', cursive;
+}
+
+.boiterow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
