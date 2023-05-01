@@ -4,6 +4,7 @@ font-family: 'Shrikhand', cursive;
 Primaire  violet   #9356DC
 Secondaire  rose   #FF79DA
 Tertiaire  vert    #99E2D0
+linear-gradient(#9356cd #ff79da);
 */
 
 .photohtml {
@@ -12,17 +13,99 @@ Tertiaire  vert    #99E2D0
 }
 
 /*general*/
+
 * {
     font-family: 'Roboto', sans-serif;
 }
 
-h1 ,
-.enseigne {
-    font-family: 'Shrikhand', cursive;
+body {
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
 }
 
 .boiterow {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+/**header**/
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 63px;
+    margin: 0;
+}
+
+/**nav**/
+
+.localisation {
+    width: 100%;
+    height: 50px;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    font-size: 16px;
+}
+
+.explor {
+    background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.presentation {
+    margin: 0px;
+    padding-top: 40px;
+    font-weight: 700;
+    width: 275px;
+    text-align: center;
+}
+
+
+.decouverte {
+    width: 315px;
+    margin-bottom: 27px;
+    text-align: center;
+}
+
+.bouton{
+    margin-bottom: 57px;
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+/** fonctionnement**/
+
+.fonctionnement {
+    margin-left: 20px;
+}
+
+.boite-fonctionnement {
+    width: 322px;
+    height: 72px;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    margin-bottom: 25px;
+}
+
+
+/**footer**/
+
+.enseigne {
+    font-family: 'Shrikhand', cursive;
+    
 }
