@@ -33,6 +33,13 @@ h2 {
   align-items: center;
 }
 
+.boitecolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 20px;
+}
 /**header**/
 
 header {
@@ -160,7 +167,7 @@ h1 {
 
 .color-section-restaurant {
   background-color: #f7f7f7;
-  margin-top: 66px;
+  margin-top: 46px;
   padding-bottom: 66px;
 }
 
@@ -178,6 +185,7 @@ h1 {
   margin-left: 17px;
   margin-bottom: 20px;
   background: url(../assets/images/logo/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
 }
 
 .card-restaurant-2 {
@@ -188,7 +196,8 @@ h1 {
   border-radius: 15px;
   margin-left: 17px;
   margin-bottom: 20px;
-  background: url(../assets/images/logo/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background: url(../assets/images/logo/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) ;
+  background-size: cover;
 }
 
 .card-restaurant-3 {
@@ -200,7 +209,8 @@ h1 {
   border-radius: 15px;
   margin-left: 17px;
   margin-bottom: 20px;
-  background: url(../assets/images/logo/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-image: url(../assets/images/logo/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: cover;
 }
 
 .card-restaurant-4 {
@@ -213,6 +223,7 @@ h1 {
   margin-left: 17px;
   margin-bottom: 20px;
   background: url(../assets/images/logo/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: cover;
 }
 
 .img-nouveau {
@@ -243,11 +254,12 @@ h1 {
   border-radius: 0px 0px 15px 15px;
 }
 
-
-
 .nom-restaurant {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 70px;
   margin-left: 13px;
-  margin-right: 120px;
 }
 
 .nom {
@@ -262,15 +274,18 @@ h1 {
   margin-bottom: 0;
 }
 
+i {
+  font-size: 22px;
+}
+
 .heart-card {
-  margin-right: 25px;
+  margin-right: 25px; 
+
 }
 
 /**footer**/
 
 footer {
-
-
   padding-bottom: 15px;
   padding-left: 25px;
   background-color: #353535;
