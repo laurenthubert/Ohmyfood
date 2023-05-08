@@ -1,0 +1,196 @@
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Shrikhand', cursive;
+Primaire  violet   #9356DC
+Secondaire  rose   #FF79DA
+Tertiaire  vert    #99E2D0
+linear-gradient(#9356cd #ff79da);
+*/
+
+/**general**/
+
+* {
+  font-family: 'Roboto', sans-serif ;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 28px;
+  padding-left: 17px;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+  padding-top: 35px;
+  height: 27px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  width: 272px;
+  padding-bottom: 5px;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0;
+}
+
+
+
+.marge {
+  background-color: #f6f6f6;
+padding-left: 13px;
+padding-right: 13px;
+}
+
+/**header**/
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 63px;
+  margin: 0;
+}
+
+.ancre {
+    color: black;
+    padding-left: 24px;
+   font-size: 20px;
+ 
+}
+
+/**premier section**/
+
+.img-restaurant {
+    display: flex;
+     justify-content: end;
+    flex-direction: column;
+    width: 100%;
+    height: 335px;
+    background: url(../assets/images/logo/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background-size: cover;
+  }
+
+  .nom-restaurant{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f6f6f6;
+    border-radius: 25px 25px 0px 0px;
+    
+  }
+
+  
+
+  .i-coeur {
+    font-size: 22px;
+    padding-right: 41px;
+    margin-top: 20px;
+  }
+
+  /** 2eme section**/
+
+.line {
+  border-bottom: 3px solid #99e2d0;
+  width: 40px;
+}
+
+.description-menu {
+border-radius: 15px;
+  width: 100%;
+  height: 69px;
+  background-color: #ffffff;
+  margin-top: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+  
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.prix {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+  padding-right: 15px;
+  height: 40px;
+  display: flex;
+  align-items: end;
+}
+
+.bouton-commande {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 0px;
+  background-color: #f6f6f6;
+
+}
+
+.color-taille{
+    background: linear-gradient(#ff79da, #9356dc);
+    width: 186px;
+    height: 50px;
+    border-radius: 25px;
+    color: white;
+}
+/**footer**/
+
+footer {
+  padding-bottom: 15px;
+  padding-left: 25px;
+  background-color: #353535;
+  color: white;
+}
+
+.enseigne {
+  font-family: "Shrikhand", cursive;
+  margin-top: 0;
+  font-size: 18px;
+  font-style: italic;
+  padding-top: 22px;
+  margin-bottom: 16px;
+}
+
+.boite-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 11px;
+}
+
+.p-footer {
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+
+
+
