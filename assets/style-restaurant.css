@@ -9,6 +9,7 @@ linear-gradient(#9356cd #ff79da);
 
 /**general**/
 
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -40,11 +41,16 @@ h3 {
 }
 
 h4 {
-  font-size: 18px;
-  font-weight: bold;
+ 
   margin: 0;
-  width: 272px;
+  width: 285px;
   padding-bottom: 5px;
+}
+ 
+
+.h4-taille {
+  font-size: 18px;
+  font-weight: 800;
 }
 
 h5 {
@@ -146,13 +152,18 @@ header {
 }
 
 .prix {
-  font-size: 15px;
-  font-weight: bold;
-  margin: 0;
-  padding-right: 15px;
-  height: 40px;
   display: flex;
-  align-items: end;
+ align-items: end;
+  height: 40px;
+  padding-right: 15px;
+  margin: 0;
+  
+  
+}
+
+.prix-taille {
+  font-weight: 700;
+  font-size: 15px;
 }
 
 .bouton-commande {
