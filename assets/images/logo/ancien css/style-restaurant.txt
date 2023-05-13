@@ -136,6 +136,7 @@ header {
   font-size: 22px;
   padding-right: 41px;
   margin-top: 20px;
+ 
 }
 
 /** 2eme section**/
@@ -194,6 +195,8 @@ header {
   border-radius: 25px;
   color: white;
 }
+
+
 /**footer**/
 
 footer {

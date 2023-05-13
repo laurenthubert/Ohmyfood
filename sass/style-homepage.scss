@@ -1,0 +1,27 @@
+@import "./libs/mixins.scss";
+@import "./libs/variables.scss";
+
+* {
+    font-family: "Roboto", sans-serif;
+  }
+
+h1 {
+   font-family: $font-titre;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 63px;
+  margin: 0;
+}
+
+.header-shadow {
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35);
+  }
+
+  .localisation {
+    @include boiterow
+  }
