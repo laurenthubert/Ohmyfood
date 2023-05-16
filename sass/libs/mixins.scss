@@ -1,6 +1,23 @@
 @mixin boiterow {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
+  }
+
+  @mixin boitecolumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @mixin card{
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      width: 340px;
+      height: 251px;
+      border-radius: 15px;
+      margin-left: 17px;
+      margin-bottom: 20px;
   }
