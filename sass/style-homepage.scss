@@ -14,6 +14,12 @@ body {
 h2 {
   font-size: 24px;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /**header**/
 
 header {
@@ -227,7 +233,6 @@ i.coeur {
   position: absolute;
   font-size: 22px;
   &:hover{
-   
     opacity: 0;
   }
 }
@@ -237,7 +242,6 @@ i.coeur {
   font-size: 22px;
   opacity: 0.1;
   &:hover {
-    
     color: linear-gradient($degrade);
     opacity: 0.9;
   }
@@ -271,4 +275,6 @@ footer {
 .p-footer {
   margin-top: 0;
   margin-bottom: 7px;
+  text-decoration: none;
+  color: white;
 }
