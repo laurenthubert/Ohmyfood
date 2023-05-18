@@ -57,7 +57,6 @@ header {
   padding-left: 24px;
   font-size: 20px;
   text-decoration: none;
-  color: black;
 }
 
 /**premier section**/
@@ -97,29 +96,7 @@ header {
   border-radius: 25px 25px 0px 0px;
 }
 
-i.coeur {
-  position: relative;
-}
-
-/**
-  .coeur-a {
-    position: absolute;
-    font-size: 22px;
-    &:hover{
-      opacity: 0;
-    }
-  }
-
-  .coeur-b {
-    position: absolute;
-    font-size: 22px;
-    opacity: 0.1;
-    &:hover {
-      color: linear-gradient($degrade);
-      opacity: 0.9;
-    }
-  }
-**/
+/**media **/
 /**2eme section**/
 .marge {
   background-color: #f6f6f6;
@@ -156,9 +133,6 @@ i.coeur {
   height: 40px;
   padding-right: 15px;
   margin: 0;
-}
-
-.prix-taille {
   font-weight: 700;
   font-size: 15px;
 }
