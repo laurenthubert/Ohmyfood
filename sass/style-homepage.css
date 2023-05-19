@@ -226,7 +226,7 @@ h1 {
 .nom-restaurant {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 150px;
   height: 70px;
   margin-left: 13px;
 }
@@ -260,8 +260,7 @@ i.coeur {
   font-size: 22px;
   opacity: 0.1;
 }
-.coeur-b:hover {
-  color: linear-gradient(#ff79da, #9356dc);
+.coeur-b:focus {
   opacity: 0.9;
 }
 

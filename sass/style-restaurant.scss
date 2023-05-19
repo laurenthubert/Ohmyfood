@@ -35,7 +35,7 @@ h3 {
 
 h4 {
   margin: 0;
-  width: 285px;
+  width: 300px;
   padding-bottom: 5px;
 }
 
@@ -99,6 +99,27 @@ header {
   border-radius: 25px 25px 0px 0px;
 }
 
+i.coeur {
+  position: relative;
+}
+
+.coeur-a {
+  position: absolute;
+  font-size: 22px;
+  &:hover {
+    opacity: 0;
+  }
+}
+
+.coeur-b {
+  position: absolute;
+  font-size: 22px;
+  opacity: 0.1;
+  &:hover {
+    color: linear-gradient($degrade);
+    opacity: 0.9;
+  }
+}
 /**2eme section**/
 
 .marge {
@@ -122,6 +143,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:hover .cloche {
+    margin-right: 0;
+    transition: margin-right 1500ms;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .description {
@@ -140,6 +167,23 @@ header {
   font-size: 15px;
 }
 
+.cloche {
+  font-size: 20px;
+  color: white;
+  @include boiterow;
+  background-color: $tertiaire;
+  width: 69px;
+  height: 69px;
+  border-radius: 0px 15px 15px 0px;
+  margin-right: -70px;
+  transition: all 1500ms;
+}
+
+.prix-cloche {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
 /**bouton commande**/
 
 .bouton-commande {
@@ -169,42 +213,39 @@ header {
 /**footer**/
 
 footer {
-    padding-bottom: 15px;
-    padding-left: 25px;
-    background-color: #353535;
-    color: white;
-  }
-  
-  .enseigne {
-    font-family: $font-titre;
-    margin-top: 0;
-    font-size: 18px;
-    font-style: italic;
-    padding-top: 22px;
-    margin-bottom: 16px;
-  }
-  
-  .boite-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 11px;
-  }
-  
-  .p-footer {
-    margin-top: 0;
-    margin-bottom: 7px;
-    text-decoration: none;
-    color: white;
-  }
+  padding-bottom: 15px;
+  padding-left: 25px;
+  background-color: #353535;
+  color: white;
+}
 
-  
+.enseigne {
+  font-family: $font-titre;
+  margin-top: 0;
+  font-size: 18px;
+  font-style: italic;
+  padding-top: 22px;
+  margin-bottom: 16px;
+}
+
+.boite-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 11px;
+}
+
+.p-footer {
+  margin-top: 0;
+  margin-bottom: 7px;
+  text-decoration: none;
+  color: white;
+}
+
 /**mediaquery**/
 
 @media (min-width: 768px) {
-
   /**general**/
-
 
   /**header**/
 
@@ -213,20 +254,20 @@ footer {
   }
 
   /**1ere section**/
-  .image-1 ,
-  .image-2 ,
-  .image-3 ,
+  .image-1,
+  .image-2,
+  .image-3,
   .image-4 {
     margin-bottom: 40px;
   }
 
-  .img-restaurant{
+  .img-restaurant {
     position: relative;
-      @include boitecolumn;
-      height: 390px;
+    @include boitecolumn;
+    height: 390px;
   }
 
-  .nom-restaurant{
+  .nom-restaurant {
     position: absolute;
     bottom: -40px;
     display: flex;
@@ -234,61 +275,59 @@ footer {
     align-items: center;
     gap: 24px;
     width: 80%;
-   
   }
 
-/**2eme section**/
+  /**2eme section**/
 
-main {
-  @include boitecolumn;
-}
+  main {
+    @include boitecolumn;
+  }
 
-.marge {
-  width: 80%;
-  @include boitecolumn;
-  padding: 0;
-}
+  .marge {
+    width: 80%;
+    @include boitecolumn;
+    padding: 0;
+  }
 
-.article-entree ,
-.article-plat ,
-.article-dessert {
-  width: 60%;
-}
+  .article-entree,
+  .article-plat,
+  .article-dessert {
+    width: 60%;
+  }
 
-/**bouton**/
+  /**bouton**/
 
-.bouton-commande {
-  width: 80%;
-}
+  .bouton-commande {
+    width: 80%;
+  }
 
+  /**footer**/
 
-/**footer**/
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 50px;
+    height: 114px;
+    padding-bottom: 0;
+  }
 
-footer {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-start;
-  align-items: center;
-  padding-right: 50px;
-  height: 114px;
-  padding-bottom: 0;
-}
+  .boite-footer-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-right: 50px;
+    margin-top: 30px;
+  }
 
-.boite-footer-media {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding-right: 50px;
-  margin-top:  30px;
-}
+  .enseigne {
+    margin-top: 20px;
+  }
 
-.enseigne {
-  margin-top: 20px;
-}
-
-.icone-footer{
-  margin-bottom: 10px;
-}
+  .icone-footer {
+    margin-bottom: 10px;
+  }
 }
