@@ -203,24 +203,34 @@ h1 {
   margin-right: 15px;
 }
 
+.new-b {
+  background-color: transparent;
+  color: transparent;
+}
+
 .presentation-restaurant {
   display: flex;
   flex-direction: row;
   align-items: center;
   background-color: white;
+  width: 100%;
   height: 77px;
   border-radius: 0px 0px 15px 15px;
 }
-
+.a-nom {
+  width: 85%;
+}
 .nom-restaurant {
   display: flex;
   flex-direction: column;
-  width: 150px;
   height: 70px;
   margin-left: 13px;
+  width:150px;
+
 }
 
 .nom {
+
   margin-top: 16px;
   margin-bottom: 0;
   font-size: 18px;
@@ -233,7 +243,9 @@ h1 {
 }
 
 i.coeur {
-  position: relative;
+
+  width: 50px;
+  height: 50px;
 }
 
 .coeur-a {
@@ -248,8 +260,7 @@ i.coeur {
   position: absolute;
   font-size: 22px;
   opacity: 0.1;
-  &:focus {
-  
+  &:hover {
     opacity: 0.9;
   }
 }

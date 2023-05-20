@@ -23,7 +23,7 @@ h2 {
   font-family: $font-titre;
   font-size: 28px;
   padding-left: 17px;
-  margin-bottom: 0;
+  
 }
 
 h3 {
@@ -75,50 +75,59 @@ header {
 .image-1 {
   background: url(../assets/images/logo/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .image-2 {
   background: url(../assets/images/logo/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .image-3 {
   background: url(../assets/images/logo/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .image-4 {
   background: url(../assets/images/logo/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .nom-restaurant {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   background-color: #f6f6f6;
   border-radius: 25px 25px 0px 0px;
+ padding-top: 32px;
 }
 
 i.coeur {
-  position: relative;
+  position: absolute;
+margin-top: 40px;
 }
 
 .coeur-a {
-  position: absolute;
+ position: absolute;
   font-size: 22px;
-  &:hover {
+  &:active {
     opacity: 0;
   }
 }
 
 .coeur-b {
-  position: absolute;
+margin-right: 30px;
   font-size: 22px;
   opacity: 0.1;
-  &:hover {
-    color: linear-gradient($degrade);
-    opacity: 0.9;
+  transition: all 2s;
+  &:active {
+    opacity: 1;
+  color: linear-gradient($degrade);
   }
 }
 /**2eme section**/
@@ -145,10 +154,10 @@ i.coeur {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  & :active .cloche{
+  cursor: pointer;
+  transform: scale(1s);
+  &:active .coche {
     margin-right: 0;
-    transition: margin-right 1500ms;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -177,7 +186,7 @@ h5 {
   font-size: 15px;
 }
 
-.cloche {
+.coche {
   flex-shrink: 0;
   font-size: 20px;
   color: white;
@@ -190,7 +199,7 @@ h5 {
   transition: all 1500ms;
 }
 
-.prix-cloche {
+.prix-coche {
   display: flex;
   align-items: center;
 }
@@ -292,6 +301,19 @@ footer {
     width: 75%;
   }
 
+  .coeur-a {
+
+     &:hover {
+       opacity: 0;
+     }
+   }
+   
+   .coeur-b {
+     &:hover {
+       opacity: 1;
+     color: linear-gradient($degrade);
+     }
+   }
   /**2eme section**/
 
   .marge {
@@ -301,10 +323,9 @@ footer {
   }
 
   .description-menu {
-    &:hover .cloche {
+    &:hover .coche {
       margin-right: 0;
       transition: margin-right 1500ms;
-      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     }
   }
 

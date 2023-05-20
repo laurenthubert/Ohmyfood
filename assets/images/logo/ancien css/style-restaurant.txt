@@ -15,7 +15,7 @@ linear-gradient(#9356cd #ff79da);
     <i class="fa-solid fa-handshake-angle"></i> partenaire
     <i class="fa-solid fa-utensils"></i> couvert
     <i class="fa-solid fa-arrow-left"></i></i> fleche
-    <i class="fa-regular fa-bell"></i>cloche
+    <i class="fa-solid fa-check"></i>coche
    -->
 */
 
