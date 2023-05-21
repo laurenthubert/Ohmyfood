@@ -234,6 +234,7 @@ h1 {
 }
 
 .nom-restaurant {
+  width: 100%;
   display: flex;
   flex-direction: column;
   height: 70px;
@@ -253,26 +254,32 @@ h1 {
   margin-bottom: 0;
 }
 
-i.coeur {
-  width: 50px;
-  height: 50px;
+.i-coeur {
+  position: absolute;
 }
 
 .coeur-a {
   position: absolute;
   font-size: 22px;
-}
-.coeur-a:hover {
-  opacity: 0;
+  left: 300px;
+  bottom: 30px;
 }
 
 .coeur-b {
   position: absolute;
+  left: 300px;
+  bottom: 30px;
   font-size: 22px;
-  opacity: 0.1;
+  opacity: 0.5;
+  transition: all 2s;
 }
-.coeur-b:hover {
-  opacity: 0.9;
+.coeur-b:active {
+  opacity: 1;
+  transition-duration: 2s;
+  color: aqua;
+}
+.coeur-b.coeur-a {
+  color: transparent;
 }
 
 /**footer**/
@@ -351,6 +358,18 @@ footer {
     width: 70%;
   }
   /**3eme section**/
+  /**.coeur-a {
+      &:hover {
+        opacity: 0;
+      }
+    }
+
+    .coeur-b {
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  **/
   .color-section-restaurant {
     padding-left: 180px;
     padding-right: 180px;

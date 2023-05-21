@@ -1,1 +1,1 @@
-{"version":3,"sources":["animation.scss","animation.css"],"names":[],"mappings":"AAAA;EACI;IACI,0BAAA;IACA,UAAA;ECCN;EDCE;IACI,wBAAA;IACA,UAAA;ECCN;AACF","file":"animation.css"}
+{"version":3,"sources":["animation.scss","animation.css"],"names":[],"mappings":"AAAA;EACI;IACI,0BAAA;IACA,UAAA;IACA,SAAA;IACA,UAAA;ECCN;EDCE;IACI,wBAAA;IACA,UAAA;IACA,WAAA;IACA,YAAA;ECCN;AACF","file":"animation.css"}

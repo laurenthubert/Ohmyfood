@@ -1,3 +1,17 @@
+@keyframes decale {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+    width: 0%;
+    height: 0%;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+  }
+}
 /**general**/
 * {
   font-family: "Roboto", sans-serif;
@@ -137,6 +151,18 @@ i.coeur {
 .line {
   border-bottom: 3px solid #99E2D0;
   width: 40px;
+}
+
+.animation-a {
+  animation: decale 2s;
+}
+
+.animation-b {
+  animation: decale 4s;
+}
+
+.animation-c {
+  animation: decale 6s;
 }
 
 .description-menu {

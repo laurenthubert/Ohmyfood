@@ -1,7 +1,9 @@
 @import "./libs/mixins.scss";
 @import "./libs/variables.scss";
+@import "./libs/animation.scss";
 
 /**general**/
+
 
 * {
   font-family: "Roboto", sans-serif;
@@ -142,6 +144,20 @@ margin-right: 30px;
   border-bottom: 3px solid $tertiaire;
   width: 40px;
 }
+
+.animation-a {
+  animation: decale 2s;
+}
+
+.animation-b {
+  animation: decale 4s ;
+
+}
+
+.animation-c {
+  animation: decale 6s ;
+}
+
 
 .description-menu {
   border-radius: 15px;
@@ -302,7 +318,6 @@ footer {
   }
 
   .coeur-a {
-
      &:hover {
        opacity: 0;
      }
