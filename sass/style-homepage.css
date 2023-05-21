@@ -1,3 +1,28 @@
+@keyframes decale {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+    height: 0%;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    height: 100%;
+  }
+}
+@keyframes loader {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
 /**general**/
 * {
   font-family: "Roboto", sans-serif;
@@ -17,6 +42,31 @@ h2 {
 a {
   text-decoration: none;
   color: black;
+}
+
+/**loader**/
+.loader {
+  position: absolute;
+  background-color: #99E2D0;
+  height: 1190px;
+  width: 100%;
+  margin-top: 900px;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+  animation: loader 2s;
+  animation-fill-mode: forwards;
+  transform-origin: bottom;
+  animation-delay: 3s;
+}
+.loader::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #FF79DA;
+  border-radius: 50%;
+  animation: spinner 4s infinite ease-in-out;
 }
 
 /**header**/
@@ -255,27 +305,27 @@ h1 {
 }
 
 .i-coeur {
-  position: absolute;
+  position: relative;
+  margin-right: 10px;
 }
 
 .coeur-a {
   position: absolute;
   font-size: 22px;
-  left: 300px;
+  margin-left: 90%;
   bottom: 30px;
 }
 
 .coeur-b {
   position: absolute;
-  left: 300px;
+  margin-left: 90%;
   bottom: 30px;
   font-size: 22px;
-  opacity: 0.5;
+  opacity: 0;
   transition: all 2s;
 }
 .coeur-b:active {
   opacity: 1;
-  transition-duration: 2s;
   color: aqua;
 }
 .coeur-b.coeur-a {
@@ -358,18 +408,6 @@ footer {
     width: 70%;
   }
   /**3eme section**/
-  /**.coeur-a {
-      &:hover {
-        opacity: 0;
-      }
-    }
-
-    .coeur-b {
-      &:hover {
-        opacity: 0.9;
-      }
-    }
-  **/
   .color-section-restaurant {
     padding-left: 180px;
     padding-right: 180px;
@@ -392,6 +430,14 @@ footer {
     max-width: 460px;
     height: 251px;
     margin: 0;
+  }
+  .coeur-b:hover {
+    opacity: 1;
+    transition-duration: 2s;
+    color: aqua;
+  }
+  .coeur-b.coeur-a {
+    color: transparent;
   }
   /**footer**/
   footer {
@@ -434,6 +480,12 @@ footer {
     width: 100%;
     max-width: 1000px;
   }
+  .loader {
+    position: absolute;
+    background-color: #99E2D0;
+    height: 600px;
+    margin-top: 580px;
+  }
 }
 @media all and (min-width: 768px) and (max-width: 950px) {
   .boiterow-media {
@@ -449,5 +501,15 @@ footer {
   .h2-media {
     display: flex;
     width: 330px;
+  }
+  .loader {
+    height: 600px;
+    margin-top: 750px;
+  }
+}
+@media all and (min-width: 951px) and (max-width: 1351px) {
+  .loader {
+    height: 600px;
+    margin-top: 580px;
   }
 }/*# sourceMappingURL=style-homepage.css.map */

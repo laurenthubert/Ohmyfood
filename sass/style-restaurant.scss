@@ -4,7 +4,6 @@
 
 /**general**/
 
-
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -25,7 +24,6 @@ h2 {
   font-family: $font-titre;
   font-size: 28px;
   padding-left: 17px;
-  
 }
 
 h3 {
@@ -109,29 +107,26 @@ header {
  padding-top: 32px;
 }
 
-i.coeur {
-  position: absolute;
-margin-top: 40px;
-}
-
 .coeur-a {
- position: absolute;
+position: absolute;
   font-size: 22px;
-  &:active {
-    opacity: 0;
-  }
 }
 
 .coeur-b {
+position: relative;
 margin-right: 30px;
   font-size: 22px;
-  opacity: 0.1;
+  opacity: 0;
   transition: all 2s;
   &:active {
     opacity: 1;
-  color: linear-gradient($degrade);
+  color: aqua;
+  }
+  &.coeur-a {
+    color: transparent;
   }
 }
+
 /**2eme section**/
 
 .marge {
@@ -151,7 +146,6 @@ margin-right: 30px;
 
 .animation-b {
   animation: decale 4s ;
-
 }
 
 .animation-c {
@@ -281,6 +275,7 @@ footer {
 /**mediaquery**/
 
 @media (min-width: 768px) {
+  
   /**general**/
 
   main {
@@ -317,18 +312,16 @@ footer {
     width: 75%;
   }
 
-  .coeur-a {
-     &:hover {
-       opacity: 0;
-     }
-   }
-   
-   .coeur-b {
-     &:hover {
-       opacity: 1;
-     color: linear-gradient($degrade);
-     }
-   }
+ 
+.coeur-b {
+    &:hover {
+      opacity: 1;
+    color: aqua;
+    }
+    &.coeur-a {
+      color: transparent;
+    }
+  }
   /**2eme section**/
 
   .marge {

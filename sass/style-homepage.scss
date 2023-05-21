@@ -1,5 +1,6 @@
 @import "./libs/mixins.scss";
 @import "./libs/variables.scss";
+@import "./libs/animation.scss";
 
 /**general**/
 
@@ -15,13 +16,39 @@ h2 {
   font-size: 24px;
   display: flex;
   justify-content: left;
-width: 330px;
+  width: 330px;
 }
 
 a {
   text-decoration: none;
   color: black;
 }
+
+/**loader**/
+
+.loader {
+  position: absolute;
+  background-color: $tertiaire;
+  height: 1190px;
+  width: 100%;
+  margin-top: 900px;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+  animation: loader 2s;
+  animation-fill-mode: forwards;
+  transform-origin: bottom;
+  animation-delay: 3s;
+  &::after {
+      content: "";
+      width: 100px;
+      height: 100px;
+      border-right: 10px solid transparent;
+      border-top: 10px solid $secondaire;
+      border-radius: 50%;
+      animation: spinner 4s infinite ease-in-out;
+    }
+  }
 
 /**header**/
 
@@ -209,7 +236,6 @@ h1 {
 }
 
 .presentation-restaurant {
- 
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -219,21 +245,18 @@ h1 {
   border-radius: 0px 0px 15px 15px;
 }
 .a-nom {
-
   width: 85%;
 }
 .nom-restaurant {
- width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   height: 70px;
   margin-left: 13px;
-  width:150px;
-
+  width: 150px;
 }
 
 .nom {
-
   margin-top: 16px;
   margin-bottom: 0;
   font-size: 18px;
@@ -241,37 +264,34 @@ h1 {
 }
 
 .ville {
-
   margin-top: 5px;
   margin-bottom: 0;
 }
 
 .i-coeur {
-  position: absolute;
- 
-
+  position: relative;
+  margin-right: 10px;
 }
 .coeur-a {
   position: absolute;
   font-size: 22px;
- left: 300px;
- bottom: 30px;
+  margin-left: 90%;
+  bottom: 30px;
 }
 
 .coeur-b {
   position: absolute;
-  left: 300px;
+  margin-left: 90%;
   bottom: 30px;
   font-size: 22px;
-  opacity: 0.5;
+  opacity: 0;
   transition: all 2s;
- &:active {
+  &:active {
     opacity: 1;
-    transition-duration: 2s;
     color: aqua;
-  } 
+  }
   &.coeur-a {
-  color: transparent;
+    color: transparent;
   }
 }
 
@@ -316,7 +336,6 @@ footer {
   .presentation {
     display: flex;
     justify-content: center;
-   
     padding-top: 30px;
     width: 675px;
   }
@@ -332,14 +351,12 @@ footer {
   .bouton {
     margin-bottom: 30px;
   }
-  
-  
+
   /**2eme section**/
 
   .fonctionnement {
     display: flex;
     justify-content: center;
-  
     margin-left: 0;
     padding-left: 180px;
     padding-right: 180px;
@@ -354,7 +371,7 @@ footer {
     display: flex;
     justify-content: left;
     width: 100%;
-     max-width: 1000px;
+    max-width: 1000px;
     gap: 30px;
   }
 
@@ -369,20 +386,7 @@ footer {
 
   /**3eme section**/
 
-/**.coeur-a {
-    &:hover {
-      opacity: 0;
-    }
-  }
-  
-  .coeur-b {
-    &:hover {
-      opacity: 0.9;
-    }
-  }
-**/
   .color-section-restaurant {
-  
     padding-left: 180px;
     padding-right: 180px;
     padding-bottom: 30px;
@@ -391,7 +395,7 @@ footer {
   .titre-section-restaurant {
     width: 100%;
     margin-left: 0;
-   padding-top: 0;
+    padding-top: 0;
   }
 
   .grid-media {
@@ -407,6 +411,17 @@ footer {
     max-width: 460px;
     height: 251px;
     margin: 0;
+  }
+
+  .coeur-b {
+    &:hover {
+      opacity: 1;
+      transition-duration: 2s;
+      color: aqua;
+    }
+    &.coeur-a {
+      color: transparent;
+    }
   }
 
   /**footer**/
@@ -432,51 +447,69 @@ footer {
   }
 
   .enseigne {
-  margin-top: 20px;
+    margin-top: 20px;
   }
 
-  .icone-footer{
+  .icone-footer {
     margin-bottom: 10px;
   }
 }
 
-@media (min-width: 1352px){
-
-.color-section-restaurant,
-.fonctionnement {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.titre-section-restaurant,
-.h2-media {
-  display: flex;
-  justify-content: left;
-width: 100%;
-max-width: 1000px;
-}
-}
-
-@media all and (min-width:768px) and (max-width: 950px) {
-  .boiterow-media{
+@media (min-width: 1352px) {
+  .color-section-restaurant,
+  .fonctionnement {
     display: flex;
     flex-direction: column;
-  align-items: center;
-  padding-left: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titre-section-restaurant,
+  .h2-media {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .loader {
+    position: absolute;
+    background-color: $tertiaire;
+    height: 600px;
+    margin-top: 580px;
+}
+}
+
+@media all and (min-width: 768px) and (max-width: 950px) {
+
+  .boiterow-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
   }
 
   .boite-fonctionnement {
     width: 400px;
- margin: 0;
+    margin: 0;
   }
 
   .h2-media {
-   display: flex;
- 
-
-   width: 330px;
+    display: flex;
+    width: 330px;
   }
 
+  .loader {
+    height: 600px;
+    margin-top: 750px;
 }
+ }
+
+ @media all and (min-width: 951px) and (max-width: 1351px) {
+
+  .loader {
+    height: 600px;
+    margin-top: 580px;
+}
+
+ }
