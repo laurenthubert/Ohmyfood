@@ -321,12 +321,15 @@ h1 {
   margin-left: 90%;
   bottom: 30px;
   font-size: 22px;
+  color: transparent;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
   opacity: 0;
   transition: all 2s;
 }
 .coeur-b:active {
   opacity: 1;
-  color: aqua;
 }
 .coeur-b.coeur-a {
   color: transparent;
@@ -434,7 +437,6 @@ footer {
   .coeur-b:hover {
     opacity: 1;
     transition-duration: 2s;
-    color: aqua;
   }
   .coeur-b.coeur-a {
     color: transparent;

@@ -116,11 +116,14 @@ position: absolute;
 position: relative;
 margin-right: 30px;
   font-size: 22px;
+  color: transparent;
+  background-image: linear-gradient($degrade);
+  background-clip: text;
+  -webkit-background-clip: text;
   opacity: 0;
   transition: all 2s;
   &:active {
     opacity: 1;
-  color: aqua;
   }
   &.coeur-a {
     color: transparent;
@@ -312,16 +315,15 @@ footer {
     width: 75%;
   }
 
- 
 .coeur-b {
     &:hover {
       opacity: 1;
-    color: aqua;
     }
     &.coeur-a {
       color: transparent;
     }
   }
+
   /**2eme section**/
 
   .marge {
