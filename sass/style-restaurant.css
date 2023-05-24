@@ -187,7 +187,7 @@ header {
   align-items: center;
   overflow: hidden;
   cursor: pointer;
- 
+  transform: scale(1s);
 }
 .description-menu:active .coche {
   margin-right: 0;

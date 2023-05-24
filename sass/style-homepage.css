@@ -66,6 +66,7 @@ a {
   border-right: 10px solid transparent;
   border-top: 10px solid #9356DC;
   border-radius: 50%;
+  animation-fill-mode: bottom;
   animation: spinner 1s infinite linear;
 }
 
@@ -77,6 +78,7 @@ a {
   border-right: 10px solid transparent;
   border-top: 10px solid #FF79DA;
   border-radius: 50%;
+  animation-fill-mode: bottom;
   animation: spinner 2s infinite linear;
 }
 
@@ -88,6 +90,7 @@ a {
   border-right: 10px solid transparent;
   border-top: 10px solid #99E2D0;
   border-radius: 50%;
+  animation-fill-mode: bottom;
   animation: spinner 3s infinite linear;
 }
 
