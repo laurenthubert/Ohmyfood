@@ -261,22 +261,22 @@ h1 {
 }
 
 .restaurant-1 {
-  background: url(../assets/images/logo/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background: url(./assets/images/logo/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
 }
 
 .restaurant-2 {
-  background: url(../assets/images/logo/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background: url(./assets/images/logo/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-size: cover;
 }
 
 .restaurant-3 {
-  background-image: url(../assets/images/logo/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-image: url(./assets/images/logo/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: cover;
 }
 
 .restaurant-4 {
-  background: url(../assets/images/logo/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background: url(./assets/images/logo/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-size: cover;
 }
 
@@ -534,4 +534,4 @@ footer {
     display: flex;
     width: 330px;
   }
-}/*# sourceMappingURL=style-homepage.css.map */
+}/*# sourceMappingURL=style-index.css.map */
