@@ -245,16 +245,24 @@ h1 {
   padding-bottom: 66px;
 }
 
+.section-restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .titre-section-restaurant {
   padding-top: 54px;
   margin-left: 20px;
+  width: 96%;
 }
 
 .card-restaurant {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  width: 340px;
+  width: 96%;
   height: 251px;
   border-radius: 15px;
   margin-bottom: 20px;
@@ -516,7 +524,7 @@ footer {
     display: flex;
     justify-content: left;
     width: 100%;
-    max-width: 1000px;
+    max-width: 100px;
   }
 }
 @media all and (min-width: 768px) and (max-width: 950px) {
@@ -524,7 +532,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 10px;
+    padding-left: 100px;
   }
   .boite-fonctionnement {
     width: 400px;
