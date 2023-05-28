@@ -1,0 +1,383 @@
+@import "./libs/mixins.scss";
+@import "./libs/variables.scss";
+@import "./libs/animation.scss";
+
+/**general**/
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: $font-titre;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+
+h2 {
+  font-family: $font-titre;
+  font-size: 28px;
+  padding-left: 17px;
+}
+
+h3 {
+  font-size: 16px;
+  margin: 0;
+  padding-top: 35px;
+  height: 27px;
+}
+
+h4 {
+  margin: 0;
+  width: auto;
+  padding-bottom: 5px;
+}
+
+h5 {
+  font-size: 15px;
+  width: auto;
+  font-weight: normal;
+  margin: 0;
+}
+
+/**header**/
+
+header {
+  @include boiterow;
+  width: 100%;
+  height: 63px;
+  margin: 0;
+}
+
+.ancre {
+  color: black;
+  padding-left: 24px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/**premier section**/
+
+.img-restaurant {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  width: 100%;
+  height: 335px;
+}
+
+.image-1 {
+  background: url(../assets/images/logo/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.image-2 {
+  background: url(../assets/images/logo/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.image-3 {
+  background: url(../assets/images/logo/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.image-4 {
+  background: url(../assets/images/logo/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.nom-restaurant {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 25px 25px 0px 0px;
+ padding-top: 32px;
+}
+
+.coeur-a {
+position: absolute;
+  font-size: 22px;
+}
+
+.coeur-b {
+position: relative;
+margin-right: 30px;
+  font-size: 22px;
+  color: transparent;
+  background-image: linear-gradient($degrade);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 2s;
+  &:active {
+    opacity: 1;
+  }
+  &.coeur-a {
+    color: transparent;
+  }
+}
+
+/**2eme section**/
+
+.marge {
+  background-color: #f6f6f6;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.line {
+  border-bottom: 3px solid $tertiaire;
+  width: 40px;
+}
+
+.animation-a {
+  animation: decale 2s;
+}
+
+.animation-b {
+  animation: decale 4s ;
+}
+
+.animation-c {
+  animation: decale 6s ;
+}
+
+
+.description-menu {
+  border-radius: 15px;
+  width: 100%;
+  height: 69px;
+  background-color: #ffffff;
+  margin-top: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  transform: scale(1s);
+  &:active .coche {
+    margin-right: 0;
+  }
+}
+
+h4,
+h5 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 5px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-left: 15px;
+}
+
+.prix {
+  display: flex;
+  align-items: end;
+  height: 40px;
+  padding-right: 25px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.coche {
+  flex-shrink: 0;
+  font-size: 20px;
+  color: white;
+  @include boiterow;
+  background-color: $tertiaire;
+  width: 59px;
+  height: 69px;
+  border-radius: 0px 15px 15px 0px;
+  margin-right: -70px;
+  transition: all 1500ms;
+}
+
+.prix-coche {
+  display: flex;
+  align-items: center;
+}
+
+/**bouton commande**/
+
+.bouton-commande {
+  @include boiterow;
+  width: 100%;
+  padding: 40px 0px;
+  background-color: #f6f6f6;
+}
+
+.color-taille {
+  background: linear-gradient($degrade);
+  width: 186px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 2000ms;
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.95);
+    transition-duration: 2000ms;
+  }
+}
+
+/**footer**/
+
+footer {
+  padding-bottom: 15px;
+  padding-left: 25px;
+  background-color: #353535;
+  color: white;
+}
+
+.enseigne {
+  font-family: $font-titre;
+  margin-top: 0;
+  font-size: 18px;
+  font-style: italic;
+  padding-top: 22px;
+  margin-bottom: 16px;
+}
+
+.boite-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 11px;
+}
+
+.p-footer {
+  margin-top: 0;
+  margin-bottom: 7px;
+  text-decoration: none;
+  color: white;
+}
+
+/**mediaquery**/
+
+@media (min-width: 768px) {
+  
+  /**general**/
+
+  main {
+    @include boitecolumn;
+  }
+
+  /**header**/
+
+  header {
+    height: 96px;
+  }
+
+  /**1ere section**/
+  .image-1,
+  .image-2,
+  .image-3,
+  .image-4 {
+    margin-bottom: 40px;
+  }
+
+  .img-restaurant {
+    position: relative;
+    @include boitecolumn;
+    height: 390px;
+  }
+
+  .nom-restaurant {
+    position: absolute;
+    bottom: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 75%;
+  }
+
+.coeur-b {
+    &:hover {
+      opacity: 1;
+    }
+    &.coeur-a {
+      color: transparent;
+    }
+  }
+
+  /**2eme section**/
+
+  .marge {
+    width: 75%;
+    @include boitecolumn;
+    padding: 0;
+  }
+
+  .description-menu {
+    &:hover .coche {
+      margin-right: 0;
+      transition: margin-right 1500ms;
+    }
+  }
+
+  .article-entree,
+  .article-plat,
+  .article-dessert {
+    width: 60%;
+  }
+
+  /**bouton**/
+
+  .bouton-commande {
+    width: 75%;
+  }
+
+  /**footer**/
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 50px;
+    height: 114px;
+    padding-bottom: 0;
+  }
+
+  .boite-footer-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-right: 50px;
+    margin-top: 30px;
+  }
+
+  .enseigne {
+    margin-top: 20px;
+  }
+
+  .icone-footer {
+    margin-bottom: 10px;
+  }
+}

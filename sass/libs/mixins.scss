@@ -1,0 +1,22 @@
+@mixin boiterow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @mixin boitecolumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @mixin card{
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      width: 96%;
+      height: 251px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+  }
